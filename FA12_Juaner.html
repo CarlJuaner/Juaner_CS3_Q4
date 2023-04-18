@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navigate_Juaner</title>
+	<style>
+		table, tr, td {border: 1px solid black;}
+	</style>
+<head>
+<body>
+	<p>[enter a number between 2 and 10]
+	<form>
+		<input type="number" id="num1" min="2" max="10"> by <input type="number" id="num2" min="2" max="10">
+	</form>
+	</p>
+	<button onclick="multiply()">Click here when ready!</button>	
+	<br><br>
+	<div id="output"></div>
+	<script>
+		function multiply(){
+			var product;
+			var n1 = document.getElementById("num1").value;
+			var n2 = document.getElementById("num2").value;
+			var table = "<table>";
+			
+			if ((2<=n1 && n1<=10) && (2<=n2 && n2<=10)){
+				for(var i=1; i<=n1; i++){
+					table += "<tr>";  
+					for(var j=1; j<=n2; j++){
+						product = i*j;
+						table += "<td>" + product + "</td>";
+					}
+					table += "</tr>";
+				}
+				table += "</table>";
+				document.getElementById("output").innerHTML = table;
+			}else{
+				alert("Please enter a number between 2 and 10");
+				document.getElementById("output").innerHTML = "";
+			}
+		}
+	</script>
+</body>
+</html>
