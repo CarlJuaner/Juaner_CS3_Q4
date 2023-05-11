@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FA14_Juaner</title>
+	<style>
+		*{
+			font-family: "MS sans serif";
+		}
+		div p{
+			background-color: white;
+			border-radius: 25px;
+			width: 33%;
+			margin-right: 33%;
+			margin-left: 33%;
+			box-shadow: 10px 10px 30px grey;
+			padding: 20px;	
+			text-decoration: bold;
+		}
+		fieldset{
+			margin-right: 33%;
+			margin-left: 33%;
+			width: 34%;
+			opacity: 0.95;
+			border-radius: 15px;
+			background-color: white;
+			border: none;
+			box-shadow: 10px 10px 30px grey;
+		}
+		legend{
+			background-color: lightgrey;
+			border-right: 1px solid rgb(150, 222, 209);
+			border-bottom: 1px solid rgb(150, 222, 209);
+			border-top: 10px solid black;
+			border-left: 10px solid grey;
+			border-radius: 10px;
+			padding: 0px 10px 0px 10px;
+			color: rgb(48,48,48);
+			width: 92%;
+		}
+		h2{
+			margin-top: 27px;
+			margin-bottom: 0px;
+			margin-left: 5px;
+			float: left;
+			color: rgb(48,48,48);
+		}
+		h6{
+			margin-top: 0px;
+			color: rgb(48,48,48);
+			margin-left: 5px;
+		}
+		hr{
+			margin: 0px;
+			color: rgb(48,48,48);
+		}
+		label{
+			color: black;
+			font-size: 16px;
+			margin-left: 10px;
+		}
+		input, select{
+			width: 92%;
+			margin-left: 5px;
+			border: none;
+			border-bottom: 1px dotted black;
+			padding: 3px;
+			margin-left: 4%;
+			margin-right: 4%;
+			margin-top: 10px;
+			background-color: white;
+			border-radius: 3px;
+		}
+		#gender{
+			border: 1px solid grey;
+			border-radius: 3px;
+			background-color: white;
+		}
+		textarea{
+			width: 92%;
+			margin-left: 5px;
+			border: none;
+			border: 1px solid grey;
+			padding-top: 20px;
+			margin-top: 10px;
+			margin-left: 4%;
+			margin-right: 4%;
+			background-color: white;
+			border-radius: 3px;
+		}
+		form p{
+			color: black;
+			background-color: white;
+			font-size: 20px;
+			border: 1px solid grey;
+			border-radius: 5px;
+			padding-top: 5px;
+		}
+		#asterisk{
+			color: red;
+		}
+		#submit{
+			width: 100px;
+			border: 1px solid grey;
+			border-radius: 5px;
+			transition: all .02s;
+		}
+		#submit:hover{
+			transform: scale(1.02);
+		}
+		#reset{
+			width: 100px;
+			border: 1px solid grey;
+			border-radius: 5px;
+			transition: all .02s;
+		}
+		#reset:hover{
+			transform: scale(1.02);
+		}
+		#opt{
+			background-color: white;
+		}
+	</style>
+<head>
+<body>
+	<form onsubmit="return outPut()">
+	<fieldset>
+		<legend ><h1>Register Now!</h1></legend>
+		<h2 style="text-align: center;">Register Here</h2>
+		<br><br><br>
+		<hr>
+		<h6>#Google Forms Inspired</h6>
+		<p>
+			<label for="name">Name</label>
+			<span id="asterisk"> *</span>
+			<br>
+			<input type="text" id="name" name="name" onblur="onBlur('name')" onfocus="onFoc(name)" style="width: 270px" required>
+			<br>
+			<br>
+		</p>
+		<p>
+			<label for="pName">Username</label>
+			<span id="asterisk"> *</span>
+			<br>
+			<input type="text" id="pName" name="pName" onblur="onBlur('pName')" onfocus="onFoc('pName')" style="width: 270px" required>
+			<br>
+			<br>
+		</p>
+		<p>
+			<label for="gender">Gender</label>
+			<span id="asterisk"> *</span>
+			<br>
+			<select type="text" id="gender" name="gender" onblur="onBlur('gender')" onfocus="onFoc('gender')" style="width: 280px" required>
+				<option id="opt"value=""></option>
+				<option id="opt" value="Male">Male</option>
+				<option id="opt" value="Female">Female</option>
+				<option id="opt" value="Prefer Not To Say">Prefer Not to Say</option>
+			</select>
+			<br>
+			<br>
+		</p>
+		<p>
+			<label for="passWord">Password</label>
+			<span id="asterisk"> *</span>
+			<br>
+			<input type="password" id="passWord" name="passWord" onblur="onBlur('passWord')" onfocus="onFoc('passWord')" minlength="4" style="width: 270px" required>
+			<br>
+			<br>
+		</p>
+		<p>
+			<label for="eAddress">Email Address</label>
+			<span id="asterisk"> *</span>
+			<br>
+			<input type="email" id="eAddress" name="eAddress" onblur="onBlur('eAddress')" onfocus="onFoc('eAddress')" style="width: 270px" required>
+			<br>
+			<br>
+		</p>
+		<p>
+			<label for="address">Address</label>
+			<span id="asterisk"> *</span>
+			<br>
+			<input type="text" id="address" name="address" onblur="onBlur('address')" onfocus="onFoc('address')" style="width: 270px" required>
+			<br>
+			<br>
+		</p>
+		<p>
+			<label for="par">Your Interests</label>
+			<span id="asterisk"> *</span>
+			<br>
+			<br>
+			<textarea id="interest" name="par" onblur="onBlur('interest')" onfocus="onFoc('interest')" style="width: 270px" required></textarea>
+			<br>
+			<br>
+		</p>
+			<input type="submit" id="submit" value="Register">
+			<input type="reset" id="reset" value="Reset" onclick="clearDiv()">
+		</fieldset>
+	</form>
+	<div id="out">
+	<br>
+	</div>
+	<script>
+		var iDs = ["name", "pName", "gender", "passWord", "eAddress", "address", "interest"];
+		function outPut(){
+			var name = document.getElementById("name").value;
+			var pName = document.getElementById("pName").value;
+			var gender = document.getElementById("gender").value; 
+			var passWord = document.getElementById("passWord").value; 
+			var eAddress = document.getElementById("eAddress").value;
+			var address = document.getElementById("address").value;
+			var interest = document.getElementById("interest").value;
+			var output = "<p>Name: " + name + "<br>"
+			+ "Username: " + pName + "<br>"
+			+ "Gender: " + gender + "<br>"
+			+ "Password: " + passWord + "<br>"
+			+ "Email Address: " + eAddress + "<br>"
+			+ "Address: " + address + "<br>"
+			+ "Interests: " + interest + "<br></p>";
+			document.getElementById("out").innerHTML = output;
+			resetVal();
+			return false;
+		}
+		function onBlur(x){
+			if (document.getElementById(x).value == ""){
+				document.getElementById(x).style.border = "3px solid rgb(170, 74, 68)";
+				document.getElementById(x).style.backgroundColor = "white";
+			}	
+			else if (document.getElementById(x).value != ""){
+				document.getElementById(x).style.border = "3px solid green";
+			}
+		}
+		function onFoc(x){
+			document.getElementById(x).style.border = "5px solid green";
+		}
+		function clearDiv(){
+			resetVal();
+			document.getElementById("out").innerHTML = " ";
+		}
+		function resetVal(){
+			document.getElementById("name").value = "";
+            document.getElementById("pName").value = "";
+            document.getElementById("passWord").value = "";
+            document.getElementById("eAddress").value = "";
+            document.getElementById("address").value = "";
+            document.getElementById("interest").value = "";
+            document.getElementById("gender").selectedIndex = 0;
+            for (var i = 0; i < iDs.length; i++) {
+				var x = iDs[i];
+                document.getElementById(x).style.border = "none";
+            }
+            for (var i = 0; i < iDs.length; i++) {
+				if ((iDs[i] != "gender")&&(iDs[i] != "interest")){
+					var x = iDs[i];
+					document.getElementById(x).style.borderBottom = "1px dotted grey";
+				}
+				else {
+					var x = iDs[i];
+					document.getElementById(x).style.border = "1px solid grey";
+				}
+            }
+            for (var i = 0; i < iDs.length; i++) {
+				var x = iDs[i];
+                document.getElementById(x).style.backgroundColor = "white";
+            }
+        }
+	</script>
+</body
+</html>
+   
