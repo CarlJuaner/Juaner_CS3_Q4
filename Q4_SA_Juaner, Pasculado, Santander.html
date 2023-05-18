@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q4_SA_Juaner, Pasculado, Santander</title>
+	<style> 
+	*{
+		font-family: "MS sans-serif";
+	}
+    .questIon{
+    	margin: 10px 0; 
+ 		margin-left: 10px; 
+		margin-right: 10px; 
+      	border: 1px solid black;
+ 		background-color:#E2FFFC; 
+ 		border-radius: 10px; 
+ 		padding: 30px; 
+       	padding-top: 10px;
+    }
+  	fieldset{  
+		margin-left: 15%; 
+		margin-right: 15%;
+		width:70%;
+ 	  	background-image: linear-gradient(to right, #9EDEFF, #4E81FF); 
+    	opacity:95%;
+ 		border-radius: 20px; 
+		padding: 30px;
+    }
+    #subres input:hover {
+     	background-color: 	#33B5F9;
+     }
+   
+    .clickyButton{
+    	background-color: #F0FFFF;
+		padding: 12px 20px;
+		border:1px soild black;
+		border-radius: 10px;
+		cursor: pointer;
+		position: relative;
+		left: 10px; 
+      margin: 10px; 
+    	
+    }
+    .instructions {	
+		color: #000000;
+    }
+   body {
+		background-image: url(https://media.istockphoto.com/id/475120238/vector/vector-of-library-book-shelf-background-vector-flat-illustrations.jpg?s=612x612&w=0&k=20&c=mdREmR7tcGeEJlqj02DDGnvxxH18Y-frVYvDN54HlTU=); 
+		background-repeat:repeat-Y; 
+		background-size:100%; 
+		font-family:sans-serif;
+    }
+    legend{
+    	border: 1px solid black; 
+		border-radius:10px; 
+		padding-left:10px; 
+    	padding-right:10px;
+		text-align: center;
+		width: 300px;
+		box-shadow: 5px 5px 5px rgb(0, 0, 139);
+ 	  	background-image: linear-gradient(to right, #F0FFFF, #4EDCFF); 
+    }
+	#disp h4{
+		border: 1px solid blue;
+		background-color: #4EDCFF;
+		box-shadow: 5px 5px 5px rgb(0, 0, 139);
+		text-align: center;
+		width: 30%;
+		margin-right: 35%;
+		margin-left: 35%;
+		border-radius: 5px;
+ 	  	background-image: linear-gradient(to right, #F0FFFF, #4EDCFF); 
+		padding: 10px;
+	}
+   
+    
+	</style>
+<head>
+<body>
+	<form onsubmit="return fScore()" autocomplete="off">
+	<fieldset>
+		<legend>
+		<h1>English Test</h1>
+		</legend>
+		<hr>
+		<h2 class="typeOfTest">I. Multiple Choice</h2>
+		<h3 class = "instructions"> Directions: Read each question carefully. Then choose the letter of the correct answer.</h3>
+		<div class="questIon">
+		<p> 1.   Which vowel sound is pronounced DIFFERENTLY?</p>
+			<input type="radio" name="c1" value="wrong" id="q1a" required></input>
+			<label for="q1a">A. f<span style="text-decoration: underline">oe</label>
+			<br>
+			<input type="radio" name="c1" value="correct" id="q1b" required></input>
+			<label for="q1b">B. can<span style="text-decoration: underline">oe</label>
+			<br>
+			<input type="radio" name="c1" value="wrong" id="q1c" required></input>
+			<label for="q1c">C. t<span style="text-decoration: underline">oe</label>
+			<br>
+			<input type="radio" name="c1" value="wrong" id="q1d" required></input>
+			<label for="q1d">D. d<span style="text-decoration: underline">oe</label>
+			<br> 
+			<span id ="r1" style="display: none">Answer: B. can<span style="text-decoration: underline">oe</span></span>
+        </div>
+			<br>
+			
+		<div class="questIon">
+		<p > 2.   Which of the following words is spelled INCORRECTLY?</p>
+			<input type="radio" name="c2" value="wrong" id="q2a" required></input>
+			<label for="q2a">A. marvelous</label>
+			<br>
+			<input type="radio" name="c2" value="correct" id="q2b" required></input>
+			<label for="q2b">B. horendous</label>
+			<br>
+			<input type="radio" name="c2" value="wrong" id="q2c" required></input>
+			<label for="q2c">C. obsequious</label>
+			<br>
+			<input type="radio" name="c2" value="wrong" id="q2d" required></input>
+			<label for="q2d">D. conspicuous</label>
+			<br>
+			<span id="r2" style="display: none">Answer: B. horendous</span>
+  		</div>
+			<br>
+  
+		<h3 class="que" >For items 3-5, choose the word whose meaning is CLOSEST to the underlined word.</h3> 
+  	<div class="questIon">
+		<p> 3.   Let us <span style="text-decoration: underline;">condense</span> this essay into a paragraph.</p>
+			<input type="radio" name="c3" value="wrong" id="q3a"  required></input>
+			<label for="q3a">A. extend</label>
+			<br>
+			<input type="radio" name="c3" value="wrong" id="q3b"  required></input>
+			<label for="q3b">B. extract</label>
+			<br>
+			<input type="radio"	name="c3" value="wrong" id="q3c"  required></input>
+			<label for="q3c">C. combine</label>
+			<br>
+			<input type="radio" name="c3" value="correct" id="q3d" required></input>
+			<label for="q3d">D. compress</label>
+			<br>
+			<span id="r3" style="display: none">Answer: D. compress</span>
+			</div>
+			<br>
+			
+		<div class="questIon">
+		<p> 4.   Being <span style="text-decoration: underline;">gregarious</span>, Mary is always the center of attention at parties.</p>
+			<input type="radio" name="c4" value="wrong" id="q4a"  required></input>
+			<label for="q4a">A. relaxed</label>
+			<br>
+			<input type="radio" name="c4" value="wrong" id="q4b" required></input>
+			<label for="q4b">B. decisive</label>
+			<br>
+			<input type="radio" name="c4" value="correct" id="q4c" required></input>
+			<label for="q4c">C. sociable</label>
+			<br>
+			<input type="radio" name="c4" value="wrong" id="q4d" required></input>
+			<label for="q4d">D. sophisticated</label>
+			<br>
+			<span id="r4" style="display: none">Answer: C. sociable</span>
+			</div>
+			<br>
+
+		<div class="questIon">
+		<p> 5.   After the volcanic eruption, the whole town was <span style="text-decoration: underline;">obliterated</span> from the map.</p>
+			<input type="radio" name="c5" value="wrong" id="q5a"  required></input>
+			<label for="q5a">A. marked</label>
+			<br>
+			<input type="radio" name="c5" value="wrong" id="q5b" required></input>
+			<label for="q5b">B. fastened</label>
+			<br>
+			<input type="radio" name="c5" value="correct" id="q5c" required></input>
+			<label for="q5c">C. eradicated</label>
+			<br>
+			<input type="radio" name="c5" value="wrong" id="q5d" required></input>
+			<label for="q5d">D. subtracted</label>
+			<br>
+			<span id="r5" style="display: none">Answer: C. eradicated</span>
+			</div>
+			<br>
+			
+		<h3>For items 6-9, choose the word that BEST COMPLETES the meaning of the sentence.</h3>
+		<div class="questIon">
+		<p> 6.   When Mother found the month-old milk, she knew immediately what was causing the ________ smell in the kitchen.</p>
+			<input type="radio" name="c6" value="correct" id="q6a" required></input>
+			<label for="q6a">A. acrid</label>
+			<br>
+			<input type="radio" name="c6" value="wrong" id="q6b" required></input>
+			<label for="q6b">B. sweet</label>
+			<br>
+			<input type="radio" name="c6" value="wrong" id="q6c" required></input>
+			<label for="q6c">C. aromatic</label>
+			<br>
+			<input type="radio" name="c6" value="wrong" id="q6d" required></input>
+			<label for="q6d">D. fragrant</label>
+			<br>
+			<span id="r6" style="display: none">Answer: A. acrid</span>
+			</div>
+			<br>
+			
+		<div class="questIon">
+		<p> 7.   A pair of old, ________ work boots lies on the floor.</p>
+			<input type="radio" name="c7" value="wrong" id="q7a"  required></input>
+			<label for="q7a">A. fragmented</label>
+			<br>
+			<input type="radio" name="c7" value="wrong" id="q7b" required></input>
+			<label for="q7b">B. collapsed</label>
+			<br>
+			<input type="radio" name="c7" value="wrong" id="q7c"  required></input>
+			<label for="q7c">C. demolished</label>
+			<br>
+			<input type="radio" name="c7" value="correct" id="q7d" required></input>
+			<label for="q7d">D. battered</label>
+			<br>
+			<span id="r7" style="display: none">Answer: D. battered</span>
+			</div>
+			<br>
+			
+		<div class="questIon">
+		<p> 8.   I feel an ________ impulse to sneeze.</p>
+			<input type="radio" name="c8" value="wrong" id="q8a" required></input>
+			<label for="q8a">A. irrasistible</label>
+			<br>
+			<input type="radio" name="c8" value="correct" id="q8b" required></input>
+			<label for="q8b">B. irresistible</label>
+			<br>
+			<input type="radio" name="c8" value="wrong" id="q8c" required></input>
+			<label for="q8c">C. iresistible</label>
+			<br>
+			<input type="radio" name="c8" value="wrong" id="q8d" required></input>
+			<label for="q8d">D. irrisestible</label>
+			<br>
+			<span id="r8" style="display: none">Answer: B. irresistible</span>
+			</div>
+			<br>
+			
+		<div class="questIon">
+		<p> 9.   Not knowing that the camera was recording every word he said, the candidate gave his ________ opinion of his opponent.</p>
+			<input type="radio" name="c9" value="correct" id="q9a" required></input>
+			<label for="q9a">A. candid</label>
+			<br>
+			<input type="radio" name="c9" value="wrong" id="q9b" required></input>
+			<label for="q9b">B. ridiculous</label>
+			<br>
+			<input type="radio" name="c9" value="wrong" id="q9c" required></input>
+			<label for="q9c">C. exaggerated</label>
+			<br>
+			<input type="radio" name="c9" value="wrong" id="q9d" required></input>
+			<label for="q9d">D. wholesome</label>
+			<br>
+			<span id="r9" style="display: none">Answer: A. candid</span>
+			</div>
+			<br>
+			
+		<div class="questIon">
+		<p> 10.   What is the meaning of the underlined idiomatic expression in the sentence?</p>
+		<p>"The present I bought my parents for their wedding anniversary cost me <span style="text-decoration: underline">an arm and a leg.</span>"</p>
+			<input type="radio" name="c10" value="wrong" id="q10a" required></input>
+			<label for="q10a">A. a serious accident</label>
+			<br>
+			<input type="radio" name="c10" value="wrong" id="q10b" required></input>
+			<label for="q10b">B. a great deal of effort</label>
+			<br>
+			<input type="radio" name="c10" value="correct" id="q10c" required></input>
+			<label for="q10c">C. a large sum of money</label>
+			<br>
+			<input type="radio" name="c10" value="wrong" id="q10d" required></input>
+			<label for="q10d">D. a loss of something important</label>
+			<br>
+			<span id="r10" style="display: none">Answer: C. a large sum of money</span>
+			</div>
+			<br>
+
+		<div class="questIon">
+		<p> 11. Which of the following word means "to make something happen"? </p>
+			<input type="radio" name="c11" value="correct" id="q711a" required></input>
+			<label for="q11a">A. Create</label>
+			<br>
+			<input type="radio" name="c11" value="wrong" id="q11b" required></input>
+			<label for="q11b">B. Destroy</label>
+			<br>
+			<input type="radio" name="c11" value="wrong" id="q11c" required></input>
+			<label for="q11c">C. Prevent</label>
+			<br>
+			<input type="radio" name="c11" value="wrong" id="q11d" required></input>
+			<label for="q11d">D. Facilitate</label>
+			<br>
+			<span id="r11" style="display: none">Answer: A. Create</span>
+			</div>
+			<br>
+			
+		<div class="questIon">
+		<p> 12. Which of the following words is the opposite of "tragic"?  </p>
+			<input type="radio" name="c12" value="wrong" id="q12a" required></input>
+			<label for="q12a">A. fatal</label>
+			<br>
+			<input type="radio" name="c12" value="wrong" id="q12b"  required></input>
+			<label for="q12b">B. disastrous</label>
+			<br>
+			<input type="radio" name="c12" value="wrong" id="q12c" required></input>
+			<label for="q12c">C. dreadful</label>
+			<br>
+			<input type="radio" name="c12" value="correct" id="q12d" required></input>
+			<label for="q12d">D. harmless</label>
+			<br>
+			<span id="r12" style="display: none">Answer: D. harmless</span>
+			</div>
+			<br>
+
+		<div class="questIon">
+		<p> 13. Which of the following words is defined by "a long, thin piece of wood or metal"? </p>
+			<input type="radio" name="c13" value="wrong" id="q13a" required></input>
+			<label for="q13a">A. Stick</label>
+			<br>
+			<input type="radio" name="c13" value="correct" id="q13b" required></input>
+			<label for="q13b">B. Rod</label>
+			<br>
+			<input type="radio" name="c13" value="wrong" id="q13c" required></input>
+			<label for="q13c">C. Branch</label>
+			<br>
+			<input type="radio" name="c13" value="wrong" id="q13d" required></input>
+			<label for="q13d">D. Stem</label>
+			<br>
+			<span id="r13" style="display: none">Answer: B. rod</span>
+			</div>
+			<br>
+
+		<div class="questIon">	
+		<p> 14. What is the past participle of the verb "sing"? </p>
+			<input type="radio" name="c14" value="wrong" id="q14a"required></input>
+			<label for="q14a">A. sang</label>
+			<br>
+			<input type="radio" name="c14" value="wrong" id="q14b" required></input>
+			<label for="q14b">B. song</label>
+			<br>
+			<input type="radio" name="c14" value="wrong" id="q14c"  required></input>
+			<label for="q14c">C. sing</label>
+			<br>
+			<input type="radio" name="c14" value="correct" id="q14d" required></input>
+			<label for="q14d">D. sung</label>
+			<br>
+			<span id="r14" style="display: none">Answer: D. sung</span>
+			</div>
+			<br>
+
+		<div class="questIon">	
+		<p>15. Which sentence is in past tense? </p>
+			<input type="radio" name="c15" value="wrong" id="q15a" required></input>
+			<label for="q15a">A. She is eating breakfast.</label>
+			<br>
+			<input type="radio" name="c15" value="wrong" id="q15b"  required></input>
+			<label for="q15b">B. He will go to the store.</label>
+			<br>
+			<input type="radio" name="c15" value="wrong" id="q15c"  required></input>
+			<label for="q15c">C. They are playing soccer.</label>
+			<br>
+			<input type="radio" name="c15" value="correct" id="q15d" required></input>
+			<label for="q15d">D. We went to the movies yesterday.</label>
+			<br>
+			<span id="r15" style="display: none">Answer: D. We went to the movies yesterday</span>
+			</div>
+			<br>
+			<br>
+		
+		<h2 class="typeOfTest">II. Identification</h2> 
+		<br>
+
+		<div class="questIon">
+		<p>16. A long fictional story with a complex plot and has chapters.</p>
+			<label for="q16">Answer:</label>
+			<input type="text" name="c16" id="q16"  required="required"></input>
+			<br>
+			<span id="r16" style="display: none">Answer: Novel</span>
+			</div>
+			<br>
+
+		<div class="questIon">
+		<p>17. A type of story that a person can read in one sitting.</p>
+			<label for="q17">Answer:</label>
+			<input type="text" name="c17" id="q17"  required="required"></input>
+			<br>
+			<span id="r17" style="display: none">Answer: Short Story</span>
+			</div>
+			<br>
+
+		<div class="questIon">	
+		<p>18. A daily journal or account of the writer's personal experiences, thoughts, activities, or observations.</p>
+			<label for="q18">Answer:</label>
+			<input type="text" name="c18" id="q18" required="required"></input> 
+			<br>
+			<span id="r18" style="display: none">Answer: Diary</span>
+			</div>
+			<br>
+		
+		<div class="questIon">	
+		<p>19. A brief literary writing that is explanatory in nature.</p>
+			<label for="q19">Answer:</label>
+			<input type="text" name="c19" id="q19" required></input>
+			<br>
+			<span id="r19" style="display: none">Answer: Essay</span> 
+			</div>
+			<br>
+
+		<div class="questIon">	
+		<p>20. A long, often book-length, narrative in verse form that retells the heroic journey of a single person, or group of persons.</p>
+			<label for="q20">Answer:</label>
+			<input type="text" name="c20" id="q20" required></input> 
+			<br>
+			<span id="r20" style="display: none">Answer: Epic</span>
+			</div>
+			<br>
+			<br>
+			
+		<!--
+		1. A long fictional story with a complex plot and has chapters. (Answer: Novel)
+		2. A type of story that a person can read in one sitting. (Answer: Short Story)
+		3. A daily journal or account of the writer's personal experiences, thoughts, activities, or observations. (Answer: Diary)
+		4. A brief literary writing that is explanatory in nature. (Answer: Essay)
+		5. A long, often book-length, narrative in verse form that retells the heroic journey of a single person, or group of persons. (Answer: Epic)
+		-->
+		<div id = "subres">
+		<input type="submit" value="Submit Answers" class="clickyButton">
+		<input type="reset" value="Clear Answers" onclick="cLear()" class="clickyButton">
+</div>
+		<div id="disp"></div>
+	</fieldset>
+	</form>
+	<script>
+		var questions = ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8", "c9", "c10", "c11", "c12", "c13", "c14", "c15"];
+		var identification = ["q16", "q17", "q18", "q19", "q20"];
+		var result = ["r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8", "r9", "r10", "r11", "r12", "r13", "r14", "r15"];
+		var iresult = ["r16", "r17", "r18", "r19", "r20"];
+		var iAnswers = ["NOVEL", "SHORT STORY", "DIARY", "ESSAY", "EPIC"];
+		function fScore(){
+			event.preventDefault();
+			var score = 0;
+			for (var i = 0; i < questions.length; i++){
+				var rs = result[i];
+				var answer = document.querySelector('input[name="'+ questions[i] + '"]:checked');
+				var cond = answer.value;
+				if(cond == "correct"){
+					score++;
+					document.getElementById(rs).style.display = "block";
+					document.getElementById(rs).style.color = "green";
+					document.getElementById(rs).style.fontWeight = "bold";
+				}
+				else{
+					score += 0;
+					document.getElementById(rs).style.display = "block";
+					document.getElementById(rs).style.color = "red";
+					document.getElementById(rs).style.fontWeight = "bold";
+				}
+			}						
+			for (var j = 0; j < identification.length; j++){
+				var iD = identification[j];
+				var inp = document.getElementById(iD).value;
+				inp = inp.toUpperCase();
+				var rs2 = iresult[j];
+				if (inp == iAnswers[j]){
+					score++;
+					document.getElementById(rs2).style.display = "block";
+					document.getElementById(rs2).style.color = "green";
+					document.getElementById(rs2).style.fontWeight = "bold";
+				}
+				else{
+					score+= 0;
+					document.getElementById(rs2).style.display = "block";
+					document.getElementById(rs2).style.color = "red";
+					document.getElementById(rs2).style.fontWeight = "bold";
+				}
+		}
+		document.getElementById("disp").innerHTML = "<h4>SCORE: " + score + "/20</h4>";
+		return false;
+    }
+		function cLear(){
+			for(var k = 0; k < result.length; k++){
+				var rs = result[k];
+				document.querySelector('input[name="' + questions[k] + '"]:checked').checked = false; 
+				document.getElementById(rs).style.display = "none";
+			}
+			for(var y = 0; y < identification.lenght; y++){
+				var iD = identification[y];
+				document.getElementById(iD).value = "";
+			}
+			document.getElementById("r16").style.display = "none";
+			document.getElementById("r17").style.display = "none";
+			document.getElementById("r18").style.display = "none";
+			document.getElementById("r19").style.display = "none";
+			document.getElementById("r20").style.display = "none";
+			document.getElementById("disp").innerHTML = " ";
+		}
+	</script>
+</body>
